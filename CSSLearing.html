@@ -6,10 +6,12 @@
     <title>CSS learning
     </title>
     <style>
-        h2{
-            color: brown;
-            font-style: italic;
-        }
+        #home{
+            /* border-left-style: dotted;
+            border-width: 5px;
+            border-color: red; */
+            border: 5px solid rgb(190, 187, 187);
+        }a
         .para{
             color: blueviolet;
             font-weight: 800;
@@ -18,17 +20,32 @@
             color: chocolate;
             font-weight: 500;
         }
+        #experience{
+            font-weight: bolder;
+        }
+        .tech{
+            color: cadetblue;
+        }
+        #agile{
+          font-style: italic;
+          font-weight: bold;
+          background-color: rgb(230, 227, 227);
+        }
+        #summary{
+          font-weight: larger;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          text-align: center;
+          text-decoration: underline;
+          text-transform: capitalize;
+        }
+        
     </style>
 </head>
 <body>
     <section id="home">
-        <h2>Professional Summary</h2>
+        <h2 id="summary">Professional Summary</h2>
         <ul>
-          <li>
-            Having 1 year of experience in developing Single page web
-            Applications using Angular 8, HTMl5,CSS3,Bootstrap 5, Javascript,
-            typescript
-          </li>
+          <li id="experience">Having 1 year of experience in developing Single page web Applications using <span class="tech"> React, Java, Angular 8, HTMl5,CSS3,Bootstrap 5, Javascript, typescript</span> </li>
 
           <li class="para">
             Experience on working with version control system - GIT and Github
@@ -45,7 +62,7 @@
 
           <li class="para">Working exposure on ID's like VS code and Notepad++</li>
 
-          <li>Good working experience under Agile methodologies environment</li>
+          <li>Good working experience under <span id="agile">Agile methodologies</span> environment</li>
 
           <li>
             Experience in using Chrome Developer Tool for debugging and
