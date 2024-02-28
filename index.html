@@ -6,15 +6,18 @@
     <title>My Profile</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <style>
+      header{
+        background-color: lightgreen;
+      }
       #resume{
         color: orange;
         font-weight: bolder;
       }
       .heading{
-        color: cadetblue;
+        color: rgb(30, 156, 70);
         font-style: italic;
       }
-      p{
+      header{
         color: blueviolet;
       }
       span{
@@ -22,6 +25,11 @@
       }
       nav a{
         text-decoration: none;
+      }
+      
+      #list2{
+        color: rgb(191, 0, 255);
+        background-color: rgba(0, 0, 0, 0.266);
       }
     </style>
   </head>
@@ -100,18 +108,23 @@
     </nav>
 
     <!-- Main Section -->
-    <section>
+    <section id="careerObj">
+      <h2 class="heading">Career Objectives</h2>
+      <p>TO WORK IN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP ORGANIZATIONAL GROWTH</p>
+      <section>
+
+      </section>
       <!-- HOME Section -->
       <section id="home">
         <h2 class="heading">Professional Summary</h2>
         <ul>
-          <li style="color: aquamarine;">
+          <li>
             Having 1 year of experience in developing Single page web
-            Applications using Angular 8, HTMl5,CSS3,Bootstrap 5, Javascript,
+            Applications using <span>Angular 8</span>, HTMl5,CSS3,Bootstrap 5,<br> Javascript,
             typescript
           </li>
 
-          <li>
+          <li id="list2">
             Experience on working with version control system - GIT and Github
           </li>
 
