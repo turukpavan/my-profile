@@ -4,81 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
-    <!-- CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CDN Link for icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--  links for font-family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
+      *{
+        font-family: "Poppins", sans-serif;
+      }
       header{
         padding: 20px;
         background-color: rgb(216, 244, 245);
       }
-      #resume{
+      #resume {
         color: orange;
         font-weight: bolder;
       }
-      .heading{
+      .heading {
         color: cadetblue;
         font-style: italic;
+        font-family:"Roboto", sans-serif;
       }
-      .header-info{
+      .header-info {
         margin-right: 40px;
         margin-left: 10px;
       }
-      .navEl{
-        margin:0px 20px ;
+      .navEl {
+        margin: 0px 20px;
       }
-      #resume-text,#duration{
+      #resume-text,
+      #duration {
         margin-left: 10px;
       }
-      strong{
+      strong {
         margin-right: 10px;
       }
-      .footerInfo{
+      .footerInfo {
         margin: 0px 10px;
       }
-      li{
+      li {
         padding: 10px;
       }
-      th,td{
+      th,
+      td {
         padding: 15px;
       }
+      table,
+      tr,
+      th,
+      td {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+      #techtable {
+        width: 50%;
+      }
+      header,nav{
+        font-family: "Roboto", sans-serif;
+        }
     </style>
   </head>
   <body>
     <!-- Header Section -->
     <header>
       <i class="fa fa-user fa-lg" aria-hidden="true"></i>
-      <span class="header-info">Gajanan Kharat </span> 
-      <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>  
-      <span class="header-info">8600 4086 19  </span>  
+      <span class="header-info">Gajanan Kharat </span>
+      <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>
+      <span class="header-info">8600 4086 19 </span>
       <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
-      <span class="header-info">gajanan490@gmail.com </span> 
-      <a href="assets/resume.pdf" download id="resume">  <i class="fa fa-download fa-lg" aria-hidden="true"></i> <span id="resume-text">RESUME</span>  </a>        
-</header>
+      <span class="header-info">gajanan490@gmail.com </span>
+      <a href="assets/resume.pdf" download id="resume">
+        <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+        <span id="resume-text">RESUME</span>
+      </a>
+    </header>
 
     <!-- Navigation Section -->
     <nav>
       <a href="#home" class="navEl">HOME</a>
       <a href="#techStack" class="navEl">TECH STACK</a>
       <a href="#project" class="navEl">PROJECTS</a>
-      <a href="#education">EDUCATION</a> 
-      <a href="personalDetail.html"  class="navEl"target="_blank">PERSONAL DETAILS</a> 
-      <a href="others.html" class="navEl"target="_blank">OTHERS</a>
+      <a href="#education">EDUCATION</a>
+      <a href="personalDetail.html" class="navEl" target="_blank"
+        >PERSONAL DETAILS</a
+      >
+      <a href="others.html" class="navEl" target="_blank">OTHERS</a>
     </nav>
 
     <!-- Main Section -->
-    <section id="careerObj">
-      <h2 class="heading">Career Objectives</h2>
-      <p>TO WORK IN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP ORGANIZATIONAL GROWTH</p>
-     
+    <section>
+      <section id="careerObj">
+        <h2 class="heading">Career Objectives</h2>
+        <p>
+          TO WORK IN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP
+          ORGANIZATIONAL GROWTH
+        </p>
+      </section>
       <!-- HOME Section -->
       <section id="home">
         <h2 class="heading">Professional Summary</h2>
         <ul>
           <li>
             Having 1 year of experience in developing Single page web
-            Applications using <span>Angular 8</span>, HTMl5,CSS3,Bootstrap 5,<br> Javascript,
-            typescript
+            Applications using <span>Angular 8</span>, HTMl5,CSS3,Bootstrap
+            5,<br />
+            Javascript, typescript
           </li>
 
           <li id="list2">
@@ -115,7 +154,7 @@
       <!-- Technology stack section -->
       <section id="techStack">
         <h2 class="heading">My Technology Stack</h2>
-        <table border="1">
+        <table id="techtable">
           <thead>
             <tr>
               <th>Sr.No</th>
@@ -158,14 +197,12 @@
         </p>
         <p>
           <strong><u>Environment:</u></strong
-          >Angular,
-          React,Java,JavaScript,HTML,CSS,Bootstrap,Github,Agli and JIRA
+          >Angular, React,Java,JavaScript,HTML,CSS,Bootstrap,Github,Agli and
+          JIRA
         </p>
         <p>
           <strong>Team Size :</strong>
-          06<strong id="duration"
-            >Duration :
-          </strong>
+          06<strong id="duration">Duration : </strong>
           <i>2021-1<sup>st</sup>-July till <u>present</u></i>
         </p>
         <p>
@@ -197,7 +234,7 @@
       <!-- Education Section -->
       <section id="education">
         <h2 class="heading">My Education Details</h2>
-        <table border="1">
+        <table>
           <thead>
             <tr>
               <th>Qualification</th>
@@ -237,22 +274,20 @@
 
     <!-- Footer section -->
     <footer>
-      <br>
+      <br />
       <a href="https://www.instagram.com/" target="_blank" class="footerInfo">
         <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
       </a>
-    
 
       <a href="https://www.linkedin.com/" target="_blank" class="footerInfo">
         <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
       </a>
-      
 
       <a href="https://www.facebook.com/" target="_blank" class="footerInfo">
         <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
       </a>
     </footer>
-    <hr/>
+    <hr />
 
     <section>
       <!-- Copy write section -->
