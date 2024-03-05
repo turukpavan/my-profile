@@ -9,69 +9,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!--  links for font-family-->
+     <!-- links for font-family
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
-    />
-
-    <style>
-      *{
-        font-family: "Poppins", sans-serif;
-      }
-      header{
-        padding: 20px;
-        background-color: rgb(216, 244, 245);
-      }
-      #resume {
-        color: orange;
-        font-weight: bolder;
-      }
-      .heading {
-        color: cadetblue;
-        font-style: italic;
-        font-family:"Roboto", sans-serif;
-      }
-      .header-info {
-        margin-right: 40px;
-        margin-left: 10px;
-      }
-      .navEl {
-        margin: 0px 20px;
-      }
-      #resume-text,
-      #duration {
-        margin-left: 10px;
-      }
-      strong {
-        margin-right: 10px;
-      }
-      .footerInfo {
-        margin: 0px 10px;
-      }
-      li {
-        padding: 10px;
-      }
-      th,
-      td {
-        padding: 15px;
-      }
-      table,
-      tr,
-      th,
-      td {
-        border: 2px solid black;
-        border-collapse: collapse;
-      }
-      #techtable {
-        width: 50%;
-      }
-      header,nav{
-        font-family: "Roboto", sans-serif;
-        }
-    </style>
+    /> -->
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- Header Section -->
@@ -89,19 +34,18 @@
     </header>
 
     <!-- Navigation Section -->
-    <nav>
-      <a href="#home" class="navEl">HOME</a>
-      <a href="#techStack" class="navEl">TECH STACK</a>
-      <a href="#project" class="navEl">PROJECTS</a>
-      <a href="#education">EDUCATION</a>
-      <a href="personalDetail.html" class="navEl" target="_blank"
-        >PERSONAL DETAILS</a
-      >
-      <a href="others.html" class="navEl" target="_blank">OTHERS</a>
+    <nav id="navSection">
+      <ul>
+        <li><a href="#home">HOME</a> </li>
+        <li><a href="#techStack">TECH STACK</a> </li>
+        <li><a href="#project">PROJECTS</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a></li>
+        <li> <a href="others.html" target="_blank">OTHERS</a></li>
+      </ul>
     </nav>
-
     <!-- Main Section -->
-    <section>
+    <section id="container">
       <section id="careerObj">
         <h2 class="heading">Career Objectives</h2>
         <p>
@@ -205,7 +149,7 @@
           06<strong id="duration">Duration : </strong>
           <i>2021-1<sup>st</sup>-July till <u>present</u></i>
         </p>
-        <p>
+        <p id="projectDEsc">
           <strong>Project Description:</strong>This project is mainly used for
           student management in colleges,where it helps to manage student record
           like <br />
@@ -214,7 +158,7 @@
         </p>
         <hr />
         <h1>Roles and Responsibilities</h1>
-        <ul>
+        <ol class="roles">
           <li>
             Design and Implemented the user interface using HTML5 and CSS3
           </li>
@@ -227,7 +171,7 @@
             stand up calls,sprint retrospective meetings
           </li>
           <li>involved in fixing technical issues in production environment</li>
-        </ul>
+        </ol>
       </section>
       <hr />
 
@@ -269,7 +213,6 @@
           </tbody>
         </table>
       </section>
-    </section>
     <hr />
 
     <!-- Footer section -->
@@ -294,5 +237,6 @@
       Copyright &copy;2024 Codemind Technology Video Communications, Inc. All
       rights reserved.
     </section>
+</section>
   </body>
 </html>
