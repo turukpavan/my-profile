@@ -5,6 +5,15 @@
   box-sizing: border-box;
   list-style-type: none;
 }
+.ri-whatsapp-line{
+  position: fixed;
+  font-size: 70px;
+  background-color: white;
+  color: green;
+  bottom: 30px;
+  right: 10px;
+  z-index: 1;
+}
 header {
   position: fixed;
   top: 0px;
